@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Opportunity Searcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Opportunity Searcher</div>
+    <a href="http://127.0.0.1:5501/frontend/mainPage/login/index.html" class="main-site-btn">← Back to Main Site</a>
+  </header>
+
+  <main class="search-section">
+    <h1>Find Opportunities Tailored to You</h1>
+    <form id="search-form" class="search-form">
+      <div class="form-group">
+        <label for="grade">Grade Level</label>
+        <select id="grade" name="grade">
+          <option value="">Any</option>
+          <option value="9">9th Grade</option>
+          <option value="10">10th Grade</option>
+          <option value="11">11th Grade</option>
+          <option value="12">12th Grade</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="skill">Skill Level</label>
+        <select id="skill" name="skill">
+          <option value="">Any</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="experience">Experience Required</label>
+        <select id="experience" name="experience">
+          <option value="">Any</option>
+          <option value="none">None</option>
+          <option value="some">Some</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="pay">Pay/Cost</label>
+        <select id="pay" name="pay">
+          <option value="">Any</option>
+          <option value="free">Free</option>
+          <option value="paid">Paid</option>
+          <option value="stipend">Stipend</option>
+        </select>
+      </div>
+
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+
+    <div id="results" class="results">
+      <!-- Results will be inserted here with JS -->
+    </div>
+  </main>
+</body>
+</html>
